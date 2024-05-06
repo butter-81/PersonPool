@@ -61,3 +61,8 @@ connection.connect((err) => {
 app.get("/", (req, res) => {
     res.send("index 페이지 접속");
 })
+
+connection.query('SELECT * FROM LEVEL', (err, rows) => {
+    if (err) throw err;
+    console.log(rows);
+})
