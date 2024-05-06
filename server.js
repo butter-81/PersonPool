@@ -59,5 +59,5 @@ connection.connect((err) => {
 });
 
 app.get("/", (req, res) => {
-    response.send("index 페이지 접속");
+    res.send("index 페이지 접속");
 })
