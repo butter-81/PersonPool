@@ -62,7 +62,7 @@ app.get("/", (req, res) => {
     res.send("index 페이지 접속");
 })
 
-connection.query('SELECT * FROM LEVEL', (err, rows) => {
+connection.query('SELECT * FROM Level', (err, rows) => {
     if (err) throw err;
     console.log(rows);
 })
